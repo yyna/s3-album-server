@@ -19,3 +19,7 @@
 
 node_modules/
 build/
+
+config.*.json
+
+.idea

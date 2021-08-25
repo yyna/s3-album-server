@@ -9,16 +9,19 @@ targetCompatibility = 1.8
 repositories {
   mavenCentral()
   maven { url "https://clojars.org/repo" }
+  maven { url "https://repo1.maven.org/maven2/" }
 }
 
 dependencies {
   compile(
       'com.amazonaws:aws-lambda-java-core:1.2.0',
-      'com.amazonaws:aws-lambda-java-log4j:1.0.0',
-      'org.clojure:data.json:0.2.6'
+      'com.amazonaws:aws-lambda-java-log4j:1.0.0'
   )
 
   implementation 'org.clojure:clojure:1.9.0'
+  implementation 'com.cognitect.aws:api:0.8.515'
+  implementation 'com.cognitect.aws:s3:811.2.934.0'
+  implementation 'com.cognitect.aws:endpoints:1.1.12.42'
 }
 
 clojure {
